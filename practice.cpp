@@ -1,23 +1,23 @@
 #include <bits/stdc++.h>
 #define rep(i, a) for(int i = 0; i < a; i++)
+#define ll long long
 using namespace std;
 
+// 要復習
 int main(){
-    int n, m, h, k;
-    cin >> n >> m >> h >> k;
-
-    string s;
-    cin >> s;
-
-    vector<int> x(m);
-    vector<int> y(m);
-    rep(i, m) cin >> x[i] >> y[i];
-
-    for(int i = 0; i < n; i++){
-        if(s[i] == 'R') cout << 'R' << endl;
-        if(s[i] == 'L') cout << 'L' << endl;
-        if(s[i] == 'U') cout << 'U' << endl;
-        if(s[i] == 'D') cout << 'D' << endl;
+    int k;
+    cin >> k;
+    int a[1000001];
+    a[1] = 7 % k;
+    for(int i = 2; i <= k; i++){
+        a[i] = (a[i - 1] * 10 + 7) % k;
     }
+    for(int i = 1; i <= k; i++){
+        if(a[i] == 0) {
+            cout << i << endl;
+            return 0;
+        }
+    }
+    cout << -1 << endl;
     return 0;
 }
