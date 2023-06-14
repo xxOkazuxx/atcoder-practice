@@ -1,8 +1,4 @@
 *.out
 .vscode
-practice
-a
-b
-c
-d
-e
+practice*
+practice.cpp
