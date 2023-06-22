@@ -1,5 +1,4 @@
 *.out
 .vscode
 practice*
-HandInput.txt
-ans*
+Ans*
