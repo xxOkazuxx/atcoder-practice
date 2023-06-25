@@ -53,27 +53,27 @@ for seq in itertools.product(range(N),range(N)):
 # N=1の場合は空のリストを返す
 def PrimeFactorize(N):
     # もしN=1ならば
-    if N==1:
+    if N == 1:
         # 空のリストを返す
         return []        
     # 素因数を格納するリスト
-    p=[]
+    p = []
     # i=2,3,4,...で試し割り
-    i=2
+    i = 2
     # i≤√Nすなわちi**2≤Nの範囲で試し割り
-    while i**2<=N:
+    while i ** 2 <= N:
         # もしiで割り切れたら
-        if N%i==0:
+        if N % i == 0:
             # iを素因数に追加
             p.append(i)
             # Nをiで割る
-            N//=i
+            N //= i
         # iで割り切れなかったら
         else:
             # 次のiへ
-            i+=1
+            i += 1
     # 試し割りが終わった時Nが1でなければ
-    if N!=1:
+    if N != 1:
         # 素因数にNを追加
         p.append(N)
     # 素因数のリストを返す
