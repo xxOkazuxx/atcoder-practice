@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 problem_name=$1
@@ -10,4 +9,4 @@ if [ ! -e ${test_dir} ]; then
     oj dl -d test/${problem_name} https://atcoder.jp/contests/${base_url}/tasks/${problem_name//-/_}
 fi
 
-oj test -c "python3 problems/abc/${problem_name}.py" -d test/${problem_name}
+oj test -c "python3 Problems/abc/${problem_name}.py" -d test/${problem_name}
