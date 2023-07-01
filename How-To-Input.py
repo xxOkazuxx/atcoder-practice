@@ -33,6 +33,8 @@ A = input().split()
 # 整数列を受け取る場合
 A = list(map(int, input().split()))
 
+A = [int(A) for _ in input().split()]
+
 # 小数列を受け取る場合
 A = list(map(float, input().split()))
 
