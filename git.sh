@@ -1,6 +1,6 @@
 #!/bin/bash
 
-commitMessage=$1
+Commit_Message=$1
 git add .
 git commit -m "$1"
 # git push origin main
