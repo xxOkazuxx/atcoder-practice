@@ -4,6 +4,7 @@ test*
 
 # デバッグ実行時にサンプルケースを入力するファイル
 input.txt
+CodeSample*
 
 # .vscode設定ファイル系
 .vscode/*

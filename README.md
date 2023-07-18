@@ -17,3 +17,7 @@
 ## Git で練習内容を記録
 
 - `sh git.sh "commitメッセージ"`
+
+## サンプルケースと解答を比較するコマンド
+
+- `code -d ./CodeSample/out.txt  ./CodeSample/answer.txt`
