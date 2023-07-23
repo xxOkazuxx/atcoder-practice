@@ -1,23 +1,17 @@
 #-------------------------------------------------------------------------------------
-# python 時間計測（ミリ秒）
-#-------------------------------------------------------------------------------------
-import time
-
-start_time = time.perf_counter_ns()
-end_time = time.perf_counter_ns()
-print('time.sleep(2) time = {} MilliSeconds'.format((end_time - start_time) / 1000000))
-#-------------------------------------------------------------------------------------
 # directionは4つの可能な方向を示す（右、左、上、下）
 direction_1 = [[0, 1], [0, -1], [1, 0], [-1, 0]]
 
 # directionは8つの可能な方向を示す（右、左、上、下、右上、右下、左上、左下）
 direction_2 = [[0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [1, -1], [-1 ,1], [-1, -1]]
+
 #-------------------------------------------------------------------------------------
 # itertolls 数列の順列や組み合わせなどを作ることができるライブラリ
 # 順列：permutations(range(始まり,終わり+1))
 # 重複なしの組み合わせ：combinations(range(始まり,終わり+1),取る個数)
 # 重複ありの組み合わせ：combinations_with_rep(range(始まり,終わり+1),取る個数)
 # 直積：product(range(始まり,終わり+1),range(始まり,終わり+1)):
+#-------------------------------------------------------------------------------------
 import itertools
 
  
@@ -59,6 +53,7 @@ for seq in itertools.product(range(N),range(N)):
 # 素因数分解
 # Nの素因数分解
 # N=1の場合は空のリストを返す
+#-------------------------------------------------------------------------------------
 def PrimeFactorize(N):
     # もしN=1ならば
     if N == 1:
@@ -88,6 +83,7 @@ def PrimeFactorize(N):
     return p
 #-------------------------------------------------------------------------------------
 # Union Find
+#-------------------------------------------------------------------------------------
 from collections import defaultdict
 
 
@@ -140,3 +136,29 @@ class UnionFind():
 
     def __str__(self):
         return '\n'.join(f'{r}: {m}' for r, m in self.all_group_members().items())
+
+#-------------------------------------------------------------------------------------
+# リストの中で連続している値の最大値
+# ex) [1, 2, 3, 4, 5, 7] -> Ans) 5
+#-------------------------------------------------------------------------------------
+def find_longest_consecutive(nums):
+    if not nums:
+        return 0
+
+    longest_streak = 1
+    current_streak = 1
+
+    for i in range(1, len(nums)):
+        if nums[i] == nums[i - 1] + 1:
+            current_streak += 1
+        else:
+            current_streak = 1
+        
+        longest_streak = max(longest_streak, current_streak)
+
+    return longest_streak
+
+# 例としてリストを与えてテスト
+nums = [1, 2, 3, 4, 5, 7]
+result = find_longest_consecutive(nums)
+print("連続している最大の個数:", result)
