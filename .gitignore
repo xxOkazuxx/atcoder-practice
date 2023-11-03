@@ -1,18 +1,5 @@
 # AtCoderテスト時に生成されるファイル
-Problems
-test*
+src/
 
 # デバッグ実行時にサンプルケースを入力するファイル
 input.txt
-CodeSample*
-
-# .vscode設定ファイル系
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-# Local History for Visual Studio Code
-.history/

@@ -34,3 +34,5 @@ RUN npm install -g atcoder-cli@2.2.0
 
 # コンテスト補助アプリケーションをインストール
 RUN pip install online-judge-tools==11.5.1
+
+RUN acc config default-task-choice all
