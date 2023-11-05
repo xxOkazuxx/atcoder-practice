@@ -16,6 +16,11 @@
         "args": "submit"
     },
     {
+        "key": "ctrl+shift+4",
+        "command": "workbench.action.tasks.runTask",
+        "args": "execute with input.txt"
+    },
+    {
         "key": "ctrl+j",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "!terminalFocus"

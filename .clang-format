@@ -1,5 +1,5 @@
 BasedOnStyle: Chromium
-IndentWidth: 2
+IndentWidth: 4
 Language: Cpp
 Standard: Auto
 ColumnLimit: 120

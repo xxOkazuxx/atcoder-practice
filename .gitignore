@@ -1,5 +1,8 @@
 # AtCoderテスト時に生成されるファイル
-src/
+src/atcoder*
 
-# デバッグ実行時にサンプルケースを入力するファイル
-input.txt
+# デバッグ時に生成されるファイル
+*.out
+
+# .vscodeの一部
+settings.json
