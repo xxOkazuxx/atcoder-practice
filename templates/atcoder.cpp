@@ -26,10 +26,10 @@ int ctoi(char c) { return int(c - '0'); }
 void ssort(string &s) { sort(begin(s), end(s)); }
 
 long long GCD(long long a, long long b) {
-  if (b == 0)
-    return a;
-  else
-    return GCD(b, a % b);
+    if (b == 0)
+        return a;
+    else
+        return GCD(b, a % b);
 }
 
 long long LCM(long long a, long long b) { return a / GCD(a, b) * b; }
@@ -99,8 +99,8 @@ long long LCM(long long a, long long b) { return a / GCD(a, b) * b; }
 // }
 
 int main() {
-  ios_base::sync_with_stdio(false);
-  cin.tie(nullptr);
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-  return 0;
+    return 0;
 }
