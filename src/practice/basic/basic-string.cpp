@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <string>
 using namespace std;
 
 int main() {
@@ -11,7 +12,7 @@ int main() {
     cout << s.size() << endl;  // 0
     s = "plan";
     cout << s.size() << endl;  // 4
-    // 先頭・末尾の文字を参照
+    // 先頭(front)・末尾(back)の文字を参照
     cout << s.front() << " " << s.back() << endl;  // p n
     // 文字列の結合
     s += "et";
@@ -23,6 +24,7 @@ int main() {
     s = "plan1plan";
     // 文字列を前方から検索(find)
     auto itr = s.find("lan");
+    // string::nops -> string::findで見つからなかった場合に返す値として定義
     if (itr != string::npos)
         cout << itr << endl;  // 1
     else
