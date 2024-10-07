@@ -37,4 +37,3 @@ RUN pip install online-judge-tools==11.5.1
 
 # acc config
 RUN acc config default-task-choice all
-RUN acc config default-template cpp
