@@ -21,31 +21,8 @@
         "args": "execute with input.txt"
     },
     {
-        "key": "ctrl+j",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "!terminalFocus"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "workbench.view.explorer"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-workbench.view.explorer"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "explorerViewletVisible"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility",
-        "when": "explorerViewletVisible"
+        "key": "ctrl+shift+5",
+        "command": "workbench.action.tasks.runTask",
+        "args": "execute"
     }
 ]

@@ -12,3 +12,6 @@
 
 ## oj login(Username, Password)
 `oj login https://atcoder.jp/`
+
+## ac-libraryの導入
+`git clone https://github.com/atcoder/ac-library.git lib/ac-library`
