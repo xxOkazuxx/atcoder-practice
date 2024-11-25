@@ -6,6 +6,3 @@ src/atcoder*
 
 # .vscodeの一部
 settings.json
-
-# ac-library
-lib/ac-library/
