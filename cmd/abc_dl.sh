@@ -16,7 +16,6 @@ WORKDIR="/app"
 CONTEST_DIR="${WORKDIR}/src/atcoder/abc"
 PROBLEM_DIR="${CONTEST_DIR}/$1"
 TEMPLATE="${WORKDIR}/templates/main.cpp"
-TEMPLATE_SHELL="${WORKDIR}/templates/out.sh"
 
 mkdir -p $CONTEST_DIR
 cd $CONTEST_DIR
@@ -30,5 +29,4 @@ for DIRPATH in $PROBLEMS; do
     fi
 
     cp -n $TEMPLATE "${DIRPATH}/main.cpp"
-    cp -n $TEMPLATE_SHELL "${DIRPATH}/out.sh"
 done
