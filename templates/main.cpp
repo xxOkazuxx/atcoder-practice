@@ -23,7 +23,7 @@ using vpll = vector<pll>;
 #define rall(x) x.rbegin(), x.rend()
 #define len(x) ((int)(x).size())
 #define YesNo(condition) cout << (condition ? "Yes" : "No") << '\n'
-#define out(x) cout << x << '\n'
+#define print(x) cout << x << '\n'
 
 // const
 const int inf = INT_MAX / 2;
@@ -34,7 +34,7 @@ const double PI = acos(-1);
 // const int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1};
 // const int dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
 
-// input ex) IN(int, n, k)
+// input -> ex) IN(int, n, k)
 void in_impl() {};
 template <typename T, typename... TS>
 void in_impl(T& head, TS&... tail) {
