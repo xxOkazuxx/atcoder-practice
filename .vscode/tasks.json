@@ -14,7 +14,7 @@
         {
             "label": "test",
             "type": "shell",
-            "command": "oj t -d ${fileDirname}/tests/ -c ${fileDirname}/${fileBasenameNoExtension}.out -N",
+            "command": "oj t -d ${fileDirname}/tests/ -c ${fileDirname}/${fileBasenameNoExtension}.out -N && rm -rf ${fileDirname}/${fileBasenameNoExtension}.out",
             "dependsOn": [
                 "compile"
             ],
