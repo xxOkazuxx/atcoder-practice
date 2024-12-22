@@ -13,6 +13,7 @@ using pi = pair<int, int>;
 using pll = pair<ll, ll>;
 using vpi = vector<pi>;
 using vpll = vector<pll>;
+using vs = vector<string>;
 
 // macro
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
